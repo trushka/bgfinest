@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style type="text/css">
+        body {
+            background-color: black; 
+            margin: 0;
+        }
+        .bg {
+            position: relative;
+            isolation: isolate;
+        }
+        .bg img {
+            --dur: 5s;
+            display: block;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            animation: var(--dur) calc(var(--dur) / 3) crossfade linear infinite;
+            mix-blend-mode: screen;
+            filter: brightness(0);
+        }
+        .bg img:first-child {
+            position: relative;
+            animation-delay: 0s;
+        }
+        .bg img:last-child {
+            animation-delay:  calc(var(--dur) / 3 * 2);
+        }
+        @keyframes crossfade {
+            from   {filter: saturate(150%) brightness(0);}
+            33.33% {filter: saturate(100%) brightness(1);}
+            66.67% {filter: saturate(150%) brightness(0);}
+         }
+    </style>
+</head>
+<body>
+
+    <div class="bg">
+        <img src="spiral-1.svg">
+        <img src="spiral-1.svg#g1">
+        <img src="spiral-1.svg#g2">
+    </div>
+    <div class="bg"></div>
+    
+    
+</body></html>

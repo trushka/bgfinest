@@ -1,0 +1,29 @@
+<svg width="814" height="526" viewBox="0 0 814 526" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+	<style type="text/css">
+		#oval path {
+			stroke-dashoffset: 23;
+			stroke-dasharray: 53.6, 44;
+		}
+		#oval path:last-child {
+			stroke-dasharray: 44, 77;
+			stroke-dashoffset: -30.6;
+			/* display: none; */
+			stroke: url(#gr2);
+		}
+	</style>
+	<linearGradient id="gr" x2="100%" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="hsl(0, 76%, 49.02%)"></stop>
+      <stop offset=".25" stop-color="hsl(90, 76%, 49.02%)"></stop>
+      <stop offset=".5" stop-color="hsl(180, 76%, 49.02%)"></stop>
+      <stop offset=".75" stop-color="hsl(270, 76%, 49.02%)"></stop>
+      <stop offset="1" stop-color="hsl(360, 76%, 49.02%)"></stop>
+    </linearGradient>
+   	<linearGradient id="gr2" x1="100%" x2="0" href="#gr" />
+    <symbol id="oval" stroke="url(#gr)" stroke-width="2">
+		<path  d="M337.232 519.399C556.469 556.087 763.937 408.101 800.625 188.864C837.313 -30.3734 800.625 188.864 536.526 272.981C272.427 357.097 43.3846 -163.231 6.69689 56.0058C-29.9908 275.243 117.995 482.711 337.232 519.399Z" pathLength="100" />
+		<path  d="M337.232 519.399C556.469 556.087 763.937 408.101 800.625 188.864C837.313 -30.3734 800.625 188.864 536.526 272.981C272.427 357.097 43.3846 -163.231 6.69689 56.0058C-29.9908 275.243 117.995 482.711 337.232 519.399Z" pathLength="100" />
+	</symbol>
+</defs>
+<use href="#oval" />
+</svg>
