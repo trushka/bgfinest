@@ -11,6 +11,8 @@
         .bg {
             position: relative;
             isolation: isolate;
+            max-width: 850px;
+            margin: auto;
         }
         .bg img {
             --dur: 5s;
@@ -30,9 +32,9 @@
             animation-delay:  calc(var(--dur) / 3 * 2);
         }
         @keyframes crossfade {
-            from   {filter: saturate(150%) brightness(0);}
-            33.33% {filter: saturate(100%) brightness(1);}
-            66.67% {filter: saturate(150%) brightness(0);}
+            from   {filter: saturate(1.4) brightness(0);}
+            33.33% {filter: saturate(1) brightness(1);}
+            66.67% {filter: saturate(1.4) brightness(0);}
          }
     </style>
 </head>
